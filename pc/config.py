@@ -10,21 +10,26 @@ LOCAL_PORT = 3100
 RPI_HOST = '192.168.137.10'
 RPI_PORT = 5000
 # ==============================================================================
+PLAYBACK = True
+LOGFILE = '/home/patrick/Desktop/test.log'
+# ==============================================================================
 # If you want to run a closed loop experiment with constant flow, set True
 # and provide a flowrate (Max = 666 mL/min)
 CONSTANT_FLOW = True
-FLOW_RATE = 200
-PERCENT_AIR = 80
-PERCENT_ACV = 20
+FLOW_RATE = 600
+PERCENT_AIR = 100
+PERCENT_ACV = 0
 # ==============================================================================
 # If you want to run a closed loop experiment with propoartional odor, set True
 # and provide the number of sources and their x/y positions.
 # If number of sources is 1, the parameters of source 2 are disregarded,
 # as well as the x position for source 1.
 PROPORTIONAL_ODOR = False
-MAX_TOTAL_AIRFLOW = 200
+MAX_TOTAL_AIRFLOW = 400
 N_ODOR_SOURCES = 1
 SINGLE_SOURCE_DISTANCE= 1000 #SET ONLY THIS ONE IF DOING SINGLE SOURCE EXPERIMENT
+REPEATING_STRIPS = False
+XON = 100 # Strip width
 # ==============================================================================
 # If you want to activate LEDs at any time, set LED activation to True
 # Set LED intensity as a fraction of maximum voltage
